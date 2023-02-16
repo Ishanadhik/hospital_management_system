@@ -1,8 +1,14 @@
 package model;
-
-public class tests {
+public class Test {
     String test_name;
     int test_cost;
+
+
+    public Test(String test_name, int test_cost) {
+
+        this.test_name = test_name;
+        this.test_cost = test_cost;
+    }
 
     public String getTest_name() {
         return test_name;
@@ -20,10 +26,16 @@ public class tests {
         this.test_cost = test_cost;
     }
 
-    public tests(String test_name, int test_cost) {
-        this.test_name = test_name;
-        this.test_cost = test_cost;
-    }
+    public void printFormat() {
 
+
+        System.out.println(test_name + "           "+ test_cost);
+
+
+
+    }
+    public void cost(){
+        System.out.println(this.test_cost);
+    }
 
 }
